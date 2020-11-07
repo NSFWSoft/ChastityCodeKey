@@ -9,7 +9,7 @@ code = input("Enter Code:")
 start =  datetime.datetime.now()
 now_string = start.strftime(fmt)
 #read template file and write new file
-with open(".template.py") as f:
+with open("template.py") as f:
     content = f.readlines()
     with open("new.py", 'w') as new_f:
         content = ["start_time='"+now_string+"'"] + content
